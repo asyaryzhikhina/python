@@ -1,0 +1,21 @@
+##first code
+import numpy as np
+x=[1, 10, 1000]
+for i in range (3):
+    t=(np.log((np.exp(1/(np.sin(x[i])+1))/(5/4+(1/(x[i]**15))))/np.log(1+(x[i]**2))))
+    print(t)
+##second code
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.arange(-2, 3, 0.01)
+plt.plot(x, x**2-x-6)
+plt.show()
+##3 code
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.arange(-10, 10, 0.01)
+plt.plot(x, (np.log(x*x+1)*np.exp(-abs(x)/10))/np.log(1+np.tan(1/(1+np.sin(x)**2))))
+plt.show()
+##4 code
+
+##5 code
