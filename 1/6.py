@@ -13,3 +13,7 @@ for x in x1:
     y2 = np.sum(y)
     y1 = np.append(y1, y2)
     y = np.array([])
+plt.plot(x1, y1, color='pink')
+plt.axis('equal')
+plt.grid(True)
+plt.show()
