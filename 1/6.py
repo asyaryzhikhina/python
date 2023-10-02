@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 x1 = np.arange(-2, 2.01, 0.001)
 c = 100
 b = 0.25
