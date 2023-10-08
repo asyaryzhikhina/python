@@ -83,18 +83,18 @@ turtle.exitonclick()
 ##5
 from random import randint
 
-number_of_turtles = 50
-steps_of_time_number = 100
+number = 50
+steps = 100
 
 
-pool = [turtle.Turtle(shape='turtle') for i in range(number_of_turtles)]
+pool = [turtle.Turtle(shape='turtle') for i in range(number)]
 for unit in pool:
     unit.penup()
     unit.speed(50)
     unit.goto(randint(-300, 300), randint(-300, 300))
 
 
-for i in range(steps_of_time_number):
+for i in range(steps):
     for unit in pool:
         wh = randint(0, 359)
         unit.right(wh)
