@@ -1,214 +1,68 @@
 ##2
-import turtle
-from random import *
-from math import sqrt
-def zero():
-    turtle.pendown()
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.penup()
-    turtle.left(90)
-    turtle.forward(20)
-def one():
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.pendown()
-    turtle.right(45)
-    turtle.forward(sqrt(200))
-    turtle.right(180-45)
-    turtle.forward(20)
-    turtle.penup()
-    turtle.left(90)
-    turtle.forward(10)
-  def two():
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.pendown()
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.forward(10)
-  def three():
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.pendown()
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.left(180)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.pendown()
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.left(180)
-    turtle.forward(20)
-  def four():
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.pendown()
-    turtle.right(180)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.right(180)
-    turtle.forward(10)
-    turtle.pendown()
-    turtle.forward(10)
-    turtle.penup()
-    turtle.left(90)
-    turtle.forward(10)
-  def five():
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(180)
-    turtle.pendown()
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.left(180)
-    turtle.forward(20)
-  def six():
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(180)
-    turtle.pendown()
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.right(180)
-    turtle.forward(10)
-    turtle.left(90)
-    turtle.forward(20)
-def seven():
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.pendown()
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(20)
-    turtle.left(90)
-    turtle.penup()
-    turtle.forward(10)
-  def eight():
-    turtle.pendown()
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.left(180)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.pendown()
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.left(180)
-    turtle.forward(20)
-  def nine():
-    turtle.left(90)
-    turtle.forward(10)
-    turtle.pendown()
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.left(180)
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.pendown()
-    turtle.forward(10)
-    turtle.right(90)
-    turtle.forward(10)
-    turtle.penup()
-    turtle.left(180)
-    turtle.forward(20)
-  def need(numbers):
-    turtle.speed(100)
-    turtle.penup()
-    turtle.goto(-300, 0)
-    for i in numbers:
-        if i == 0:
-            zero()
-        if i == 1:
-            one()
-        if i == 2:
-            two()
-        if i == 3:
-            three()
-        if i == 4:
-            four()
-        if i == 5:
-            five()
-        if i == 6:
-            six()
-        if i == 7:
-            seven()
-        if i == 8:
-            eight()
-        if i == 9:
-            nine()
-    turtle.exitonclick()
-numbers = [int(i) for i in input().split()]
-need(numbers)
+import turtle as t
+t.color('Blue')
+t.shape('turtle')
+
+
+
+a = [(1, 10, 90, 20, 90, 10, 90, 20, 0, 90, 20), 
+     (0, 270, 10, 1, 135, 14, 225, 20, 0, 180, 20, 270, 10), 
+     (1, 10, 270, 10, 270, 10, 90, 10, 90, 10, 90, 0, 20, 270, 10), 
+     (1, 10, 225, 14, 135, 10, 225, 14, 135, 0, 10, 90, 20, 270, 10),
+     (1, 270, 10, 90, 10, 270, 10, 180, 20, 0, 270, 10), 
+     (1, 10, 180, 10, 90, 10, 90, 10, 270, 10, 270, 10, 180, 10, 90, 0, 20, 270, 10), 
+     (0, 10, 225, 1, 14, 45, 10, 90, 10, 90, 10, 90, 10, 225, 0, 14, 315, 10), 
+     (1, 10, 225, 14, 45, 10, 0, 90, 10, 90, 20, 270, 10),
+     (1, 270, 10, 90, 10, 180, 10, 90, 10, 90, 10, 90, 20, 90, 10, 180, 10, 0, 10), 
+     (1, 270, 10, 90, 10, 90, 10, 90, 10, 90, 0, 20, 90, 1, 10, 90, 20, 270, 0, 10)]
+
+for i in list((t.textinput('Введите индекс', 'индекс: '))):
+    i = int(i)
+    for j in range(len(a[i])):
+        if a[i][j] > 20:
+            t.left(a[i][j])
+        elif a[i][j] == 0:
+            t.up()
+        elif a[i][j] == 1:
+            t.down()
+        else:
+            t.forward(a[i][j])
+
+t.exitonclick()
+
 
 ##3
 with open('input.txt') as file:
     for line in file:
-       need(line) 
+       import turtle as t
+t.color('Blue')
+t.shape('turtle')
+
+a = [(1, 10, 90, 20, 90, 10, 90, 20, 0, 90, 20), 
+     (0, 270, 10, 1, 135, 14, 225, 20, 0, 180, 20, 270, 10), 
+     (1, 10, 270, 10, 270, 10, 90, 10, 90, 10, 90, 0, 20, 270, 10), 
+     (1, 10, 225, 14, 135, 10, 225, 14, 135, 0, 10, 90, 20, 270, 10),
+     (1, 270, 10, 90, 10, 270, 10, 180, 20, 0, 270, 10), 
+     (1, 10, 180, 10, 90, 10, 90, 10, 270, 10, 270, 10, 180, 10, 90, 0, 20, 270, 10), 
+     (0, 10, 225, 1, 14, 45, 10, 90, 10, 90, 10, 90, 10, 225, 0, 14, 315, 10), 
+     (1, 10, 225, 14, 45, 10, 0, 90, 10, 90, 20, 270, 10),
+     (1, 270, 10, 90, 10, 180, 10, 90, 10, 90, 10, 90, 20, 90, 10, 180, 10, 0, 10), 
+     (1, 270, 10, 90, 10, 90, 10, 90, 10, 90, 0, 20, 90, 1, 10, 90, 20, 270, 0, 10)]
+
+for i in list((t.textinput('Введите индекс', 'индекс: '))):
+    i = int(i)
+    for j in range(len(a[i])):
+        if a[i][j] > 20:
+            t.left(a[i][j])
+        elif a[i][j] == 0:
+            t.up()
+        elif a[i][j] == 1:
+            t.down()
+        else:
+            t.forward(a[i][j])
+
+t.exitonclick()
+
 
 ##4
 
