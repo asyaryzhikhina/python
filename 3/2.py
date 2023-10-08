@@ -35,10 +35,10 @@ t.exitonclick()
 with open('input.txt') as file:
     for line in file:
        import turtle as t
-t.color('Blue')
-t.shape('turtle')
+       t.color('Blue')
+       t.shape('turtle')
 
-a = [(1, 10, 90, 20, 90, 10, 90, 20, 0, 90, 20), 
+       a = [(1, 10, 90, 20, 90, 10, 90, 20, 0, 90, 20), 
      (0, 270, 10, 1, 135, 14, 225, 20, 0, 180, 20, 270, 10), 
      (1, 10, 270, 10, 270, 10, 90, 10, 90, 10, 90, 0, 20, 270, 10), 
      (1, 10, 225, 14, 135, 10, 225, 14, 135, 0, 10, 90, 20, 270, 10),
@@ -49,17 +49,17 @@ a = [(1, 10, 90, 20, 90, 10, 90, 20, 0, 90, 20),
      (1, 270, 10, 90, 10, 180, 10, 90, 10, 90, 10, 90, 20, 90, 10, 180, 10, 0, 10), 
      (1, 270, 10, 90, 10, 90, 10, 90, 10, 90, 0, 20, 90, 1, 10, 90, 20, 270, 0, 10)]
 
-for i in list((t.textinput('Введите индекс', 'индекс: '))):
-    i = int(i)
-    for j in range(len(a[i])):
-        if a[i][j] > 20:
-            t.left(a[i][j])
-        elif a[i][j] == 0:
-            t.up()
-        elif a[i][j] == 1:
-            t.down()
-        else:
-            t.forward(a[i][j])
+      for i in list((t.textinput('Введите индекс', 'индекс: '))):
+        i = int(i)
+        for j in range(len(a[i])):
+           if a[i][j] > 20:
+             t.left(a[i][j])
+           elif a[i][j] == 0:
+             t.up()
+           elif a[i][j] == 1:
+             t.down()
+           else:
+             t.forward(a[i][j])
 
 t.exitonclick()
 
