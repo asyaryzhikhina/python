@@ -1,5 +1,6 @@
 ##2
 import turtle
+from random import *
 from math import sqrt
 def draw_zero():
     turtle.pendown()
