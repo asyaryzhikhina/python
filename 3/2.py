@@ -66,19 +66,19 @@ t.exitonclick()
 
 ##4
 
-turtle.speed(100)
-turtle.back(500)
-turtle.forward(1000)
-turtle.back(900)
-turtle.shape('circle')
+t.speed(100)
+t.back(500)
+t.forward(1000)
+t.back(900)
+t.shape('circle')
 
 s=450
 for j in range(13):
     s=int(2*s/3)
-    c=turtle.xcor()
+    c=t.xcor()
     for i in range(s+1):
-        turtle.goto(i+c,4*s*(i/s-(i/s)**2))
-turtle.exitonclick()
+        t.goto(i+c,4*s*(i/s-(i/s)**2))
+t.exitonclick()
 
 ##5
 from random import randint
@@ -87,7 +87,7 @@ number = 50
 steps = 100
 
 
-pool = [turtle.Turtle(shape='turtle') for i in range(number)]
+pool = [t.Turtle(shape='turtle') for i in range(number)]
 for unit in pool:
     unit.penup()
     unit.speed(50)
