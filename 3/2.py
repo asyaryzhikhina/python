@@ -49,8 +49,11 @@ with open('input.txt') as file:
      (1, 270, 10, 90, 10, 180, 10, 90, 10, 90, 10, 90, 20, 90, 10, 180, 10, 0, 10), 
      (1, 270, 10, 90, 10, 90, 10, 90, 10, 90, 0, 20, 90, 1, 10, 90, 20, 270, 0, 10)]
 
-        for i in list((t.textinput('Введите индекс', 'индекс: '))):
-          i = int(i)
+with open('input.txt') as file:
+    for line in file:
+       import turtle as t
+       t.color('Blue')
+       t.shape('turtle')
           for j in range(len(a[i])):
             if a[i][j] > 20:
               t.left(a[i][j])
