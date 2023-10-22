@@ -1,0 +1,69 @@
+class Sequence():
+    def __init__(self, sequence1, sequence2=''):
+        self.seq1 = sequence1
+        self.seq2 = sequence2
+    def transcr(self):
+        raise NameError('HiThere')
+
+    def hamming_dist(self):
+        raise NameError('HiThere')
+
+    def count_n(self):
+        raise NameError('HiThere')
+    
+    def to_prot(self):
+        raise NameError('HiThere')
+    
+    def transcr(self):
+        raise NameError('HiThere')
+class DNA(Sequence):
+    def count_n(self):
+        A, T, G, C = (self.seq1.count('A'), self.seq1.count('T'),
+            self.seq1.count('G'), self.seq1.count('C'))
+        d = {'A': A, 'T': T, 'G': G, 'C': C}
+        return d
+        
+    def transcr(self):
+        return self.seq1.replace('T', 'U')
+    
+    def complement_dna(self):
+        def apply(x):
+            if x == 'T':
+                x = 'A'
+            elif x == 'C':
+                x = 'G'
+            elif x == 'A':
+                x = 'T'
+            else:
+                x = 'C'
+            return x
+        
+        listochek = list(map(apply, self.seq1))
+        return ''.join(listochek)
+    
+    def hamming_dist(self):
+        def counter(p, n):
+            if p != n:
+                return 1
+            return 0
+        
+        symbs = list(map(counter, self.seq1, self.seq2))
+        return sum(symbs)
+
+    def to_prot(self):
+        if self.seq1.find('ATG') == -1:
+            return False
+        return True             
+import json
+class RNA(Sequence):     
+    def transcr(self):
+        return self.seq.replace('U', 'T')
+
+    def count_n(self):
+        A, U, G, C = (self.seq1.count('A'), self.seq1.count('U'),
+            self.seq1.count('G'), self.seq1.count('C'))
+        d = {'A': A, 'U': U, 'G': G, 'C': C}
+        return d
+d = DNA('ATGTGCGGC')
+print(d.count_n())
+print(d.to_prot())
